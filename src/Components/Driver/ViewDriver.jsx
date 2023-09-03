@@ -1,9 +1,10 @@
 import React from "react";
-import { Button, Label, Radio } from "flowbite-react";
+import { Button, Checkbox, Label, Radio } from "flowbite-react";
 import { Card } from "flowbite-react";
 
 const ViewDriver = () => {
   return (
+    
     <div className="h-auto w-full p-4 pr-5 font-Poppins">
       {/*change availability & request */}
       <Card className=" dark:bg-slate-900">
@@ -35,6 +36,7 @@ const ViewDriver = () => {
                 <span className="">Reply</span>
               </div>
             </div>
+            
             <div className="text-md group flex flex-col justify-center space-y-2 rounded-sm bg-white ring-[0.5px] ring-gray-400 hover:bg-gray-200 dark:bg-slate-950 dark:ring-gray-600 dark:hover:bg-gray-800 md:flex-row md:items-center md:justify-between md:space-y-0">
               <p className="flex w-full truncate px-4 py-2">
                 <span className="block md:hidden">Name :&ensp;</span>
@@ -76,14 +78,14 @@ const ViewDriver = () => {
         <div className="flex justify-start ">
           <Card className=" bg-white dark:border-gray-700 dark:bg-gray-700">
             <div className="flex">
-              <Radio
+              <Checkbox
                 defaultChecked
                 id="Available"
                 name="availability"
                 value="Available"
               />
               <Label className="ml-4">Available</Label>
-              <Radio
+              <Checkbox
                 className="ml-20"
                 defaultChecked
                 id="Unavailable"
